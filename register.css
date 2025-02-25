@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a40, #101025);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.register-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    width: 400px; /* Expanded width */
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center the button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.login-link {
+    margin-top: 15px;
+    color: #ffffff; /* Set paragraph color to white */
+}
+
+.login-link a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #0056b3; /* Hover effect for the link */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

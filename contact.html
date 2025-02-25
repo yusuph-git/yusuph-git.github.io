@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Yusuph Graphics</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-">
+            <img src="images/LOGO 2.jpg" alt="" width="90px" height="50px, border-radius: 50%">
+            </i>
+            <div class="logo-text">MOTION STUDIO <br>
+                <p>Transforming ideas into stunning visuals</p></div>
+        </div>
+
+        <nav>
+            <div class="togglebtn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="navlinks" id="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Address: 1050 University of Dodoma, Dodoma, Tanzania</p>
+            <p><i class="fas fa-phone"></i> Phone: +255674969017</p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:your-email@example.com">yusuphpro23@gmail.com</a></p>
+        </div>
+
+        <div class="feedback-form">
+            <h2>Feedback</h2>
+            <form action="submit_feedback.php" method="post">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
